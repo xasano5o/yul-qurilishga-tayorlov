@@ -20,7 +20,7 @@ const SiginCom = () => {
         const token = response.data.access;
         sessionStorage.setItem("token", token);
         navigate("/home");
-
+        window.location.reload();
         // toast.success('Succes', {
         //   position: "top-center",
         //   autoClose: 1999,
