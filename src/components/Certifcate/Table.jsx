@@ -54,7 +54,7 @@ function CertifcateCom() {
                     return (
                       <tr class="border-b dark:border-gray-700 cursor-pointer">
                         <td class="px-4 py-3 whitespace-nowrap">
-                          <img src={value?.qr_image} alt="" />
+                          <img className='w-[100px] h-[100px]' src={value?.qr_image} alt="" />
                         </td>
                         <td class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                           <Link to={`/home/${value.id}`}>{value.first_name}</Link>
